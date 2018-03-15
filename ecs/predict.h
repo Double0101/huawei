@@ -5,6 +5,4 @@
 
 void predict_server(char * info[MAX_INFO_NUM], char * data[MAX_DATA_NUM], int data_num, char * filename);
 
-	
-
 #endif

@@ -1,0 +1,3 @@
+/Users/Double/workspace/Huawei/sdk-gcc/build/CMakeFiles/rebuild_cache.dir
+/Users/Double/workspace/Huawei/sdk-gcc/build/CMakeFiles/edit_cache.dir
+/Users/Double/workspace/Huawei/sdk-gcc/build/CMakeFiles/ecs.dir

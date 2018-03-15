@@ -1,12 +1,37 @@
-#include "predict.h"
-#include <stdio.h>
+#include "commen.h"
 
-//你要完成的功能总入口
+using namespace std;
+
 void predict_server(char * info[MAX_INFO_NUM], char * data[MAX_DATA_NUM], int data_num, char * filename)
 {
-	// 需要输出的内容
+	// 脨猫脪陋脢盲鲁枚碌脛脛脷脠脻
 	char * result_file = (char *)"17\n\n0 8 0 20";
+    istringstream iss(info[0]), iss1(info[2]);
+    int num_cpu, num_mem, count_flavor;
+    iss >> num_cpu;
+    iss >> num_mem;
+    iss1 >> count_flavor;
+    vector<int> flavor_list;
+    for (int i = 3; i < 3 + count_flavor; ++i)
+    {
+        istringstream is(info[i]);
+        string s_type;
+        is >> s_type;
+        int type = atoi(s_type.substr(6, s_type.size()).c_str());
+        cout << type << endl;
+        flavor_list.push_back(type);
+    }
 
-	// 直接调用输出文件的方法输出到指定文件中(ps请注意格式的正确性，如果有解，第一行只有一个数据；第二行为空；第三行开始才是具体的数据，数据之间用一个空格分隔开)
+    istringstream is_t1(info[6+count_flavor]), is_t2(info[7+count_flavor]), is_type(info[4+count_flavor]);
+    string s_type;
+    is_type >> s_type;
+    int type = 0;
+    if (strcmp(s_type.c_str() ,"CPU")) type = 1;
+    tm t1,t2;
+    is_t1 >> get_time(&t1, "%Y-%m-%d %H:%M:%S");
+    is_t2 >> get_time(&t2, "%Y-%m-%d %H:%M:%S");
+    int delta_day = (mktime(&t2)-mktime(&t1)) / 86400;
+
+	// 脰卤陆脫碌梅脫脙脢盲鲁枚脦脛录镁碌脛路陆路篓脢盲鲁枚碌陆脰赂露篓脦脛录镁脰脨(ps脟毛脳垄脪芒赂帽脢陆碌脛脮媒脠路脨脭拢卢脠莽鹿没脫脨陆芒拢卢碌脷脪禄脨脨脰禄脫脨脪禄赂枚脢媒戮脻拢禄碌脷露镁脨脨脦陋驴脮拢禄碌脷脠媒脨脨驴陋脢录虏脜脢脟戮脽脤氓碌脛脢媒戮脻拢卢脢媒戮脻脰庐录盲脫脙脪禄赂枚驴脮赂帽路脰赂么驴陋)
 	write_result(result_file, filename);
 }

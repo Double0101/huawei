@@ -5,6 +5,7 @@
 
 int main(int argc, char *argv[])
 {
+    // traindata input output
     print_time("Begin");
 	char *data[MAX_DATA_NUM];
     char *info[MAX_INFO_NUM];
@@ -12,7 +13,7 @@ int main(int argc, char *argv[])
     int info_line_num;
 
 
-    char *data_file = argv[1];
+    char *data_file = argv[1]; // traindata 
 
     data_line_num = read_file(data, MAX_DATA_NUM, data_file);
 
@@ -23,7 +24,7 @@ int main(int argc, char *argv[])
         return -1;
     }
 	
-    char *input_file = argv[2];
+    char *input_file = argv[2]; // input
 
     info_line_num = read_file(info, MAX_INFO_NUM, input_file);
 
@@ -34,9 +35,9 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    char *output_file = argv[3];
+    char *output_file = argv[3]; // output
 
-    predict_server(info, data, data_line_num, output_file);
+    predict_server(info, data, data_line_num, output_file);// input traindata 
 
     release_buff(info, info_line_num);
 	release_buff(data, data_line_num);
