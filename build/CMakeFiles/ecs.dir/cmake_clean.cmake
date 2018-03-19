@@ -1,9 +1,13 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ecs.dir/ecs.cpp.o"
-  "CMakeFiles/ecs.dir/io.cpp.o"
-  "CMakeFiles/ecs.dir/predict.cpp.o"
-  "/Users/Double/workspace/Huawei/sdk-gcc/bin/ecs.pdb"
-  "/Users/Double/workspace/Huawei/sdk-gcc/bin/ecs"
+  "CMakeFiles/ecs.dir/src/utils.cpp.o"
+  "CMakeFiles/ecs.dir/src/predict.cpp.o"
+  "CMakeFiles/ecs.dir/src/io.cpp.o"
+  "CMakeFiles/ecs.dir/src/ecs.cpp.o"
+  "CMakeFiles/ecs.dir/src/LinearRegression.cpp.o"
+  "CMakeFiles/ecs.dir/src/TrainingData.cpp.o"
+  "CMakeFiles/ecs.dir/src/matrix.cpp.o"
+  "/home/huaizhi/ecs/bin/ecs.pdb"
+  "/home/huaizhi/ecs/bin/ecs"
 )
 
 # Per-language clean rules from dependency scanning.

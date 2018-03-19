@@ -1,0 +1,3 @@
+/home/huaizhi/ecs/ecs/build/CMakeFiles/edit_cache.dir
+/home/huaizhi/ecs/ecs/build/CMakeFiles/rebuild_cache.dir
+/home/huaizhi/ecs/ecs/build/CMakeFiles/ecs.dir

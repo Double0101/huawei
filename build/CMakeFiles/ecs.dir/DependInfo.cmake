@@ -4,15 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Double/workspace/Huawei/sdk-gcc/ecs/ecs.cpp" "/Users/Double/workspace/Huawei/sdk-gcc/build/CMakeFiles/ecs.dir/ecs.cpp.o"
-  "/Users/Double/workspace/Huawei/sdk-gcc/ecs/io.cpp" "/Users/Double/workspace/Huawei/sdk-gcc/build/CMakeFiles/ecs.dir/io.cpp.o"
-  "/Users/Double/workspace/Huawei/sdk-gcc/ecs/predict.cpp" "/Users/Double/workspace/Huawei/sdk-gcc/build/CMakeFiles/ecs.dir/predict.cpp.o"
+  "/home/huaizhi/ecs/ecs/src/LinearRegression.cpp" "/home/huaizhi/ecs/build/CMakeFiles/ecs.dir/src/LinearRegression.cpp.o"
+  "/home/huaizhi/ecs/ecs/src/TrainingData.cpp" "/home/huaizhi/ecs/build/CMakeFiles/ecs.dir/src/TrainingData.cpp.o"
+  "/home/huaizhi/ecs/ecs/src/ecs.cpp" "/home/huaizhi/ecs/build/CMakeFiles/ecs.dir/src/ecs.cpp.o"
+  "/home/huaizhi/ecs/ecs/src/io.cpp" "/home/huaizhi/ecs/build/CMakeFiles/ecs.dir/src/io.cpp.o"
+  "/home/huaizhi/ecs/ecs/src/matrix.cpp" "/home/huaizhi/ecs/build/CMakeFiles/ecs.dir/src/matrix.cpp.o"
+  "/home/huaizhi/ecs/ecs/src/predict.cpp" "/home/huaizhi/ecs/build/CMakeFiles/ecs.dir/src/predict.cpp.o"
+  "/home/huaizhi/ecs/ecs/src/utils.cpp" "/home/huaizhi/ecs/build/CMakeFiles/ecs.dir/src/utils.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/Users/Double/workspace/Huawei/sdk-gcc/ecs/lib"
+  "/home/huaizhi/ecs/ecs/lib"
   )
 
 # Targets to which this target links.

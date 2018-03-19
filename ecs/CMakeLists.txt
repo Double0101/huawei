@@ -20,7 +20,7 @@ SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall -std=c++11")
 
 # 查找当前目录下的所有源文件
 # 并将名称保存到 DIR_LIB_SRCS 变量
-aux_source_directory(. DIR_SRCS)
+aux_source_directory(./src DIR_SRCS)
 
 # 指定生成目标
 add_executable(ecs ${DIR_SRCS})

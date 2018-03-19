@@ -1,0 +1,1 @@
+/usr/bin/c++    -O3 -Wall -std=c++11   CMakeFiles/ecs.dir/src/utils.cpp.o CMakeFiles/ecs.dir/src/predict.cpp.o CMakeFiles/ecs.dir/src/io.cpp.o CMakeFiles/ecs.dir/src/ecs.cpp.o CMakeFiles/ecs.dir/src/LinearRegression.cpp.o CMakeFiles/ecs.dir/src/TrainingData.cpp.o CMakeFiles/ecs.dir/src/matrix.cpp.o  -o ../bin/ecs -rdynamic 
